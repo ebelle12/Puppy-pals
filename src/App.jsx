@@ -4,15 +4,14 @@ import { useState } from 'react'
 
 function App() {
   const [puppies, setPuppies] = useState(puppyList)
-  console.log(puppies)
-
-
+  const [featPupId, setFeatPupId] = useState(null)
+  
 
   return (
     <div>
       {
         puppies.map((puppy) => {
-          return <p>{puppy.name}{puppy.age}</p>
+          return <p onClick={()=>{}} key={puppy.id}>{puppy.name}</p>
         })
       }
 
